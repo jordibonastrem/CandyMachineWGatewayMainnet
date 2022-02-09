@@ -60,7 +60,8 @@ export const MintButton = ({
           if (gatewayStatus === GatewayStatus.ACTIVE) {
             setClicked(true);
           } else {
-            const token = await requestGatewayToken();
+            // eslint-disable-next-line @typescript-eslint/no-unused-vars
+            await requestGatewayToken();
           }
         } else {
           await onMint();
